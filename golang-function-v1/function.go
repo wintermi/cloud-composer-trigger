@@ -43,7 +43,7 @@ func TriggerCloudComposerDAG(ctx context.Context, m PubSubMessage) error {
 	// Retrieve Required Environment Variables
 	AIRFLOW_URI := os.Getenv("AIRFLOW_URI")
 	DAG_ID := os.Getenv("DAG_ID")
-	VERBOSE := strings.ToUpper(os.Getenv("VERBOSE")) == "TRUE"
+	VERBOSE := strings.ToUpper(strings.TrimSpace(os.Getenv("VERBOSE"))) == "TRUE"
 	TARGET_URL := fmt.Sprintf("%s/api/v1/dags/%s/dagRuns", AIRFLOW_URI, DAG_ID)
 
 	// Output Verbose Debug Information to the Log if required
