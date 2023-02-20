@@ -3,6 +3,7 @@ module example.com/cloudfunction
 go 1.16
 
 require (
-	cloud.google.com/go/compute v1.10.0 // indirect
-	golang.org/x/oauth2 v0.1.0
+	cloud.google.com/go/compute v1.18.0 // indirect
+	golang.org/x/net v0.7.0 // indirect
+	golang.org/x/oauth2 v0.5.0
 )
