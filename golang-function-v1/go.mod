@@ -2,7 +2,7 @@ module example.com/cloudfunction
 
 go 1.20
 
-require golang.org/x/oauth2 v0.14.0
+require golang.org/x/oauth2 v0.15.0
 
 require (
 	cloud.google.com/go/compute v1.23.3 // indirect
